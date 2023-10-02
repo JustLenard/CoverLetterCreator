@@ -1,0 +1,20 @@
+Dear Hiring Manager,
+
+I hope this letter finds you well. I am writing to express my interest in the junior software engineer position at Bending Spoons. With my self-taught development background and experience in web and mobile development, I believe I would be a valuable addition to your team.
+
+During my time at Tara Interactive as a web developer, I had the opportunity to contribute to React projects, including a complex surveillance application with micro frontends, multitenancy, and real-time surveillance features. I took ownership of coding new features, resolving issues, and evaluating different solutions. Additionally, I played a crucial role in solo-porting a React project to React Native, showcasing my ability to adapt and learn new technologies.
+
+One of my notable projects is Chatify, a real-time chat application built with React and TypeScript. It features group and one-on-one chat, CRUD functionality for messages, real-time notifications, and integration with OpenAI's gpt-3.5 model. You can find the code on my GitHub (https://github.com/JustLenard/webSocketApp) and a live demo at (https://chatify-app.up.railway.app/login).
+
+In terms of skills, I have experience with React, React Native, Redux Toolkit, Node.js, NestJS, TypeScript, PostgreSQL, and DevOps tools like Docker. I am also proficient in HTML, CSS, and have knowledge of testing frameworks like Jest.
+
+After reviewing the job description, I believe I possess the qualities and abilities that Bending Spoons is seeking. I am a quick learner with logical-analytical abilities, driven to achieve excellence in my work, and passionate about software development. I am also humble, detail-oriented, and proactive in seeking out new opportunities and ideas.
+
+I am enthusiastic about learning Python, Swift, and Kotlin, and I am confident that with my can-do attitude and autonomy, I can adapt quickly to new technologies.
+
+If given the opportunity, I would be honored to contribute to Bending Spoons and its mission to become the world's best app developer. I am excited about the prospect of working with talented and knowledgeable colleagues while continuously learning and making a significant impact.
+
+Thank you for considering my application. I look forward to the possibility of discussing how my skills and experience can contribute to your team. Please find my attached resume for more details.
+
+Sincerely,
+Cociug Vitalie

@@ -1,0 +1,73 @@
+Name:
+Cociug Vitalie
+
+Introduction:
+I am a self-taught developer with less than 2 years of experience. Thanks to the route I've chosen, I became a developer with high autonomy that has a strong can-do attitude and thrives in ambiguity.
+
+Professional Experience
+Tara Interactive, Web Developer
+Feb 2022 – Jun 2023
+•I actively contributed to two React projects, solo-ported one of them to React Native, and played a crucial role in developing the React front-end for a complex surveillance application with micro frontends, microservices, multitenancy, websockets, and real-time surveillance features.
+
+•I assumed a proactive role in project ownership, taking charge of coding new features, resolving issues, and conducting analyses to evaluate the benefits and trade-offs of different solutions.
+
+•Provided estimates and technical input to help guide feature development, including raising questions about the necessity of features, suggesting alternatives, and explaining any difficulties or offering solutions
+
+•Deployed code to Production, Staging and QA environments
+
+•Participated in code reviews and provided feedback to improve code quality and maintainability
+
+•Helped create procedures and guidelines for project development, ensuring consistency and efficiency in the development process
+
+•Helped colleagues solve technical problems by offering guidance, sharing knowledge, and suggesting solutions
+
+
+Projects I'be built:
+Chatify, Chat application
+
+Github - https://github.com/JustLenard/webSocketApp
+Live Demo - https://chatify-app.up.railway.app/login
+
+Features:
+•Real time chat application
+•Responsive design
+•Group and one on one chat
+•Ability to chat with some unique personalities created with OpenAi's gpt-3.5 model
+•CRUD (Create, read, edit and delete) functionality for messages
+•Real time, persistent notifications created when you receive a message
+•Sign up, persistent login and automatic access token refresh
+
+Frontend Technologies:
+•React +TypeScript
+•Redux Toolkit and Context API
+•Socket.IO
+•Axios and axios interceptors
+
+Backend Technologies:
+•NestJS + TypeScript
+•PostgreSQL (TypeORM for database interactions)
+•JWT for authentication and JWT guards for authorization
+•OpenAI API (gpt-3.5-turbo)
+•Argon2 for hashing data
+
+
+My Skills
+React / React NativeRedux 
+Toolkit, React-router, Formik, Webpack, Antd, MUI, REST
+
+NodeJs / NestJSExpress
+MVC, OOP
+
+TypeScript / JavaScript
+webSockets, async/await, Axios, events, try/catch
+
+PostgreSQLTypeORM
+joins, CRUD
+
+DevOpsLinux, Docker
+
+Html / Css
+Scss, Styled Components
+
+Jest
+Unit Testing, React Testing Library
