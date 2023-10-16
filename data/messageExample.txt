@@ -1,0 +1,17 @@
+Hi Brenden,
+
+I recently came across the job posting for Full Stack Developers and wanted to reach out to express my interest in the role. I believe I would be a strong candidate due to my experience and skills.
+
+In my previous position, I had the opportunity to work extensively with React and TypeScript. Additionally, when our DevOps team members left the company, I stepped into their roles. This decision was driven by my daily use of Linux, which made tasks like SSHing into remote servers, pulling code from GitHub/GitLab, building and deploying it with NGINX, and handling various configurations, including adding new .env variables for production/staging environments, or setting up proxy routes, relatively straightforward. Consequently, I became responsible for deploying code to test and staging environments.
+
+Moreover, both during my employment and on my own time, I further refined my backend development skills. This journey led to the creation of 'Chatify,' a comprehensive chat application built with React, TypeScript, NestJs, PostgreSQL (TypeOrm), Socket.IO, Redux, and more. Chatify boasts real-time one-on-one and global chat capabilities, JWT authentication with JWT guards, persistent login with automatic token refresh, real-time notifications, and numerous other features.
+
+You can check out the Chatify App at: chatify-app.up.railway.app and the corresponding GitHub repository at github.com/justLenard/webSocketApp.
+
+I am excited about the possibility of joining your team and contributing my expertise to your organization. I look forward to discussing my qualifications in more detail.
+
+Thank you for considering my application, and I hope to hear from you soon.
+
+Best regards,
+
+Vitalie

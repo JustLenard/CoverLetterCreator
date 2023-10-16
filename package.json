@@ -1,29 +1,18 @@
 {
-  "name": "coverlettercreator",
-  "module": "index.ts",
-  "type": "module",
-  "scripts": {
-    "createPdf": "bun run createPdf.ts",
-    "start": "nest start",
-    "dev": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
-    "format": "prettier --write \"**/*.{ts,tsx,css,scss,js}\""
-  },
-  "devDependencies": {
-    "bun-types": "latest",
-    "openai": "^3.2.1"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "pdf-lib": "^1.17.1"
-  }
+	"name": "coverlettercreator",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"createPdf": "bun run createPdf.ts"
+	},
+	"devDependencies": {
+		"bun-types": "latest",
+		"openai": "^3.2.1"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"pdf-lib": "^1.17.1"
+	}
 }

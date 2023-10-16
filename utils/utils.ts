@@ -14,5 +14,5 @@ export const createCoverLetterName = async () => {
 			console.log(err)
 		}
 	})
-	return `coverLetters/coverLetter-${maxNumber + 1}.md`
+	return `coverLetters/coverLetter-${maxNumber + 1}.txt`
 }

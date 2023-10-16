@@ -1,0 +1,18 @@
+Dear Hiring Team,
+
+I hope this message finds you well. My name is Cociug Vitalie, a self-taught developer with approximately 3 years of coding experience. I am writing to express my enthusiasm for the Full Stack Developer position at your esteemed company. My robust development skills, adaptability, passion for improvement, and hands-on experience make me an excellent fit for this role.
+
+In my recent role at Tara Interactive, I was a key contributor to various React projects and even had the opportunity to port one of them to React Native independently. I was also part of a team that developed a complex surveillance application involving micro frontends, microservices, multitenancy, websockets, and real-time surveillance features. This experience allowed me to develop a profound understanding of Full Stack development, CI/CD pipelines, automated testing, and tooling which align perfectly with the requirements of your role.
+
+A project I am particularly proud of is Chatify, a real-time chat application I designed and developed. Using technologies such as React, TypeScript, Redux and Socket.IO, I crafted a responsive application capable of group chats, one-on-one chats, CRUD operations, and real-time notifications. This project showcased my ability to innovate, implement, and troubleshoot, qualities that I believe to be vital for a Full Stack Developer.
+
+When it comes to the technical requirements of your role, I am well-versed in AWS Lambda, TypeScript, and React, coupled with a solid foundation in automated testing, Agile, and CI/CD. Moreover, my hands-on experience with deploying and managing containerized apps using Docker, plus my familiarity with Linux are all valuable assets that I bring to the table.
+
+What attracts me to this role is not just the opportunity to work with modern web technologies, but also the company's dedication to innovation and delivering unmatched solutions. I am eager to contribute to a team that values continuous improvement, quality-focused development, and maintains a product mindset. 
+
+In conclusion, I am excited about the prospect of contributing to your esteemed organization and adding value to the team. I look forward to the opportunity to further discuss my application.
+
+Thank you for considering my application.
+
+Sincerely,
+Cociug Vitalie

@@ -1,0 +1,18 @@
+Dear Hiring Team at Fortec,
+
+I trust this letter finds you in good spirits. My name is Cociug Vitalie and I am an industrious, self-taught developer with 1.5 of direct development experience but with the added advantage of high adaptability and resilience. I came across your posting for a Frontend Developer and believe I am an excellent fit given my skills, experience and passion for software development.
+
+During my tenure at Tara Interactive, I played a pivotal role in two React projects, and even proudly took on the task of solo-porting one of them to React Native. My responsibilities spanned across the software development lifecycle, going beyond coding to include troubleshooting, conducting analyses and deploying code across various environments.
+
+A project that stands as testament to my abilities is Chatify, a real-time chat application. This project is a culmination of using modern technologies and frameworks, including but not limited to React, Redux Toolkit, Axios and the OpenAI API, to deliver a seamless chatting experience.
+
+What sets me apart is my ability to mesh my theoretical knowledge with practical applications. I am familiar with the technologies listed in your job description, including TypeScript, React and Node, among others. I also possess hands-on experience with SQL databases, adherence to the OOP, SOLID, and design principles, and an understanding of infrastructure as code.
+
+The chance to work at Fortech is immensely appealing due to your emphasis on empowerment, teamwork, and continuous self-development. Your commitment to crafting quality software across a broad range of industries aligns with my career aspirations and I am excited at the prospect of being a part of your mission to create outstanding software solutions.
+
+In conclusion, I am thrilled about the opportunity to apply and further develop my skills at Fortech. I am eager to contribute to your mission and potentially become a part of your esteemed team. I look forward to the opportunity to discuss my application further and illustrate how my skills can serve your needs.
+
+Thank you for considering my application.
+
+Best regards,
+Cociug Vitalie

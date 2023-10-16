@@ -1,6 +1,6 @@
 Dear Hiring Team at EveryMatrix,
 
-I hope this message finds you well. My name is Cociug Vitalie, a passionate, I am a self-taught developer with approximately 3 years of coding experience. I am writing to express my immense interest in the Frontend Developer position at your company, EveryMatrix. My unique blend of development skills, adaptability, and resilience, along with my desire to be a part of a groundbreaking organization, make me a strong contender for this role.
+I hope this message finds you well. My name is Cociug Vitalie, a passionate developer with under 2 years of hands-on experience in building scalable and efficient technology solutions. I am writing to express my immense interest in the Frontend Developer position at your company, EveryMatrix. My unique blend of development skills, adaptability, and resilience, along with my desire to be a part of a groundbreaking organization, make me a strong contender for this role.
 
 At Tara Interactive, I actively contributed to two React projects, one of which I then solo-ported to React Native. Additionally, I was an integral part of a 3 man team that developed a complex surveillance application with microservices, real-time surveillance features, and more. I took the initiative in project ownership, coding new features, and resolving issues. I also played a role in deploying codes across multiple environments and ensuring code quality and maintainability through constructive code reviews.
 
