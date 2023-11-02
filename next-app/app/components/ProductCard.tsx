@@ -6,7 +6,7 @@ interface Props {
 
 const ProductCard: React.FC<Props> = ({ name }) => {
 	return (
-		<div className="border-red-600">
+		<div className="p-2 my-5 bg-sky-500 text-3xl hover:bg-sky-600">
 			<div>{name}</div>
 			<AddToCard />
 		</div>
