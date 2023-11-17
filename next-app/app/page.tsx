@@ -1,30 +1,48 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import ProductCard from './components/ProductCard'
+'use client'
+import { useState } from 'react'
 
-export default async function Home() {
-	const res = await fetch('https://jsonplaceholder.typicode.com/users')
-	const data = await res.json()
+const MyComponent = () => {
+	const [inputValue, setInputValue] = useState('')
+	const [responseData, setResponseData] = useState(null)
 
-	console.log('This is data', data)
+	const fetchData = async () => {
+		try {
+			// Replace 'YOUR_API_ENDPOINT' with the actual API endpoint
+			const response = await fetch(`route=${inputValue}`)
+			const data = await response.json()
+			setResponseData(data)
+		} catch (error) {
+			console.error('Error fetching data:', error)
+		}
+	}
+
+	const handleInputChange = (e) => {
+		setInputValue(e.target.value)
+	}
+
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		fetchData()
+	}
 
 	return (
 		<div>
-			<h1>Home</h1>
+			<form onSubmit={handleSubmit}>
+				<label>
+					Enter something:
+					<input type="text" value={inputValue} onChange={handleInputChange} />
+				</label>
+				<button type="submit">Fetch Data</button>
+			</form>
 
-			<h2>users</h2>
-
-			<ul>
-				{data.map((user) => {
-					return (
-						<li key={user.id}>
-							<ProductCard name={user.name} />
-						</li>
-					)
-				})}
-			</ul>
-
-			<Link href={'/kusers'}>users</Link>
+			{responseData && (
+				<div>
+					<h2>API Response:</h2>
+					<pre>{JSON.stringify(responseData, null, 2)}</pre>
+				</div>
+			)}
 		</div>
 	)
 }
+
+export default MyComponent
