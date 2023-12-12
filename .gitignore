@@ -97,6 +97,8 @@ web_modules/
 
 # dotenv environment variable files
 
+coverLetters
+/next-app/.env
 .env
 .env.development.local
 .env.test.local
