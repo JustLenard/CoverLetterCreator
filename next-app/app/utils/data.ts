@@ -2,8 +2,7 @@ import { StepsDataT } from './types'
 
 export const StepsData: StepsDataT[] = [
 	{
-		initialData: `
-Name:
+		initialData: `Name:
 Cociug Vitalie
 
 Introduction:
@@ -77,15 +76,15 @@ Scss, Styled Components
 Jest
 Unit Testing, React Testing Library`,
 		texts: [
-			'Nulla consectetur culpa aute nisi fugiat duis magna. Dolor enim Lorem magna dolore sunt irure in. Aute et aliqua esse labore ex et adipisicing aute et dolor deserunt pariatur. Ullamco tempor ad eiusmod do ex Lorem consectetur consectetur.',
-			'Velit veniam ut sint irure et aliqua est deserunt qui dolor. Non occaecat in elit sint occaecat exercitation est aute officia. Tempor occaecat magna dolore velit enim. Mollit ad magna labore pariatur exercitation voluptate nisi id eu anim enim Lorem fugiat minim.',
+			'Tell about yourlsef. Who are your? What can you? What did you do? What skills do you have? Why should you be hired for this job.',
+			'Personally I just copy and pasted information from my CV (see the default text on the left). It is good to also write some short stories / events of situations that my showcase a particular skill of your that may distiguish you from other candidates',
+			'Give the AI something to work with',
 		],
-		title: 'Title0',
+		title: 'Personal information',
 	},
 
 	{
-		initialData: `
-        Dear Hiring Team at EveryMatrix,
+		initialData: `Dear Hiring Team at EveryMatrix,
 
 I hope this message finds you well. My name is Cociug Vitalie, a passionate, I am a self-taught developer with approximately 3 years of coding experience. I am writing to express my immense interest in the Frontend Developer position at your company, EveryMatrix. My unique blend of development skills, adaptability, and resilience, along with my desire to be a part of a groundbreaking organization, make me a strong contender for this role.
 
@@ -105,66 +104,52 @@ Sincerely,
 Cociug Vitalie
         `,
 		texts: [
-			'Irure consectetur occaecat cupidatat officia velit commodo ad dolor. Ex voluptate quis nulla qui cupidatat nostrud reprehenderit sit. Consequat id occaecat esse ullamco deserunt ea magna incididunt ut irure dolor sunt. Cillum incididunt sunt dolor nulla reprehenderit exercitation.',
+			'Give the AI a cover letter example to work with if you want. This makes the cover letter that will be created to have a more predictable structure.',
+			'Feel free to write your own example of cover letter, copy and paste a already existing or using this already created example',
+			'If you want a more unpredictable result, delete the existing text and leave the field empty',
 		],
-		title: 'Title1',
+		title: 'Cover letter example',
 	},
 	{
-		initialData: `
-        
-
-Full Stack Developer (React/TypeScript/AWS Lambda) x 4 - All Levels - Remote - New
-
+		initialData: `Full Stack Developer (React/TypeScript/AWS Lambda) x 4 - All Levels - Remote - New
 
 £50,000 - £75,000 + Bonus + Excellent Benefits + Remote Working
 
-
 A renowned organisation - recognised as the leader in its field - requires a number of Full Stack Engineers with strong experience of React, TypeScript and AWS Lambda as part of a new function!
-
 
 Suitable candidates will be motivated, thoughtful, and want to be involved in the full stack from CI/CD, automated testing, tooling, development, and operations.
 
-
 Successful candidates will:
-
-
-    Be experienced Full Stack Engineers with experience across Front End, Back End and DevOps
-    Posses a DevOps mindset with experience of AWS or similar
-    Have experience of the following: AWS Lambda, TypeScript, React coupled with automated testing, Agile and CI/CD
-
+*Be experienced Full Stack Engineers with experience across Front End, Back End and DevOps
+*Posses a DevOps mindset with experience of AWS or similar
+*Have experience of the following: AWS Lambda, TypeScript, React coupled with automated testing, Agile and CI/CD
 
 Additionally, you will:
-
-
-    Be a good communicator / collaborator
-    Ideally have coaching & mentoring skills
-    Possess a continuous improvement mindset
-    Be proactive and take initiative
-    Have a product mindset and be quality focused
+*Be a good communicator / collaborator
+*Ideally have coaching & mentoring skills
+*Possess a continuous improvement mindset
+*Be proactive and take initiative
+*Have a product mindset and be quality focused
 
 
 What's on Offer?
-
-
-    Competitive salary
-    Annual Bonus
-    Remote Working
-    25 days holiday plus option to purchase additional leave
-    Excellent pension scheme
-    Sharesave scheme
-    Health care plans
-    Gym memberships
-
+*Competitive salary
+*Annual Bonus
+*Remote Working
+*25 days holiday plus option to purchase additional leave
+*Excellent pension scheme
+*Sharesave scheme
+*Health care plans
+*Gym memberships
 
 Please send your CV for an informal chat and full job description.
 
-
-Excellent opportunity to join an organisation that is willing to invest heavily in your development and future!
-        
+Excellent opportunity to join an organisation that is willing to invest heavily in your development and future!        
         `,
 		texts: [
-			'Labore excepteur ullamco elit voluptate velit duis fugiat cupidatat cillum anim ea adipisicing proident. Incididunt veniam ullamco ipsum aute. Aliqua veniam quis do consectetur nisi proident minim incididunt. Incididunt ea consequat esse velit qui ea dolor aute aute.',
+			'Write useful information about the job about the company. Maybe the company has a great culture. Write it in here. Maybe there are some specific mentions that the job need attention to detail. This will help nudge the outcome to produce something that will empahsize this.',
+			'Also, feel free to just copy and paste the job description if you are lazy',
 		],
-		title: 'Title2',
+		title: 'Job / company description',
 	},
 ]

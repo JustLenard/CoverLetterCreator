@@ -17,7 +17,7 @@ const steps = ['Inforamtion about yourself', 'Cover letter example', 'Job / comp
 
 const getStepValue = (step: number): string => {
 	const valInSession = window.sessionStorage.getItem(String(step))
-	if (valInSession) return valInSession
+	// if (valInSession) return valInSession
 
 	return StepsData[step].initialData
 }
@@ -39,6 +39,8 @@ export default function HorizontalLinearStepper() {
 	}
 
 	const handleNext = () => {
+		window.sessionStorage.setItem(String(activeStep), stepVal[activeStep as StepKey])
+
 		let newSkipped = skipped
 		if (isStepSkipped(activeStep)) {
 			newSkipped = new Set(newSkipped.values())
