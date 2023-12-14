@@ -152,4 +152,9 @@ Excellent opportunity to join an organisation that is willing to invest heavily 
 		],
 		title: 'Job / company description',
 	},
+	{
+		title: 'Finish',
+		texts: ['Here is your cover letter'],
+		initialData: '',
+	},
 ]

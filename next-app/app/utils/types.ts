@@ -10,6 +10,6 @@ export type StepsDataT = {
 	texts: string[]
 }
 
-export type StepKey = 0 | 1 | 2
+export type StepKey = 0 | 1 | 2 | 3
 
 export type StepVal = Record<StepKey, string>

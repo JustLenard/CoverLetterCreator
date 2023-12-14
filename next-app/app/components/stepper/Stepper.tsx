@@ -7,13 +7,20 @@ import StepLabel from '@mui/material/StepLabel'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { useState } from 'react'
-import { TextField } from '@mui/material'
+import { CircularProgress, TextField } from '@mui/material'
 import AppTextField from './AppTextField'
 import { StepsData } from '@/app/utils/data'
 import StepperELement from './StepperELement'
 import { StepKey, StepVal } from '@/app/utils/types'
+import { generateCoverLetter } from '@/app/api/generateCoverLetter'
+import { green } from '@mui/material/colors'
 
-const steps = ['Inforamtion about yourself', 'Cover letter example', 'Job / company description']
+const steps = [
+	'Inforamtion about yourself',
+	'Cover letter example',
+	'Job / company description',
+	'Finish',
+]
 
 const getStepValue = (step: number): string => {
 	const valInSession = window.sessionStorage.getItem(String(step))
@@ -26,29 +33,43 @@ const initialStepVal: StepVal = {
 	0: getStepValue(0),
 	1: getStepValue(1),
 	2: getStepValue(2),
+	3: getStepValue(3),
 }
 
 export default function HorizontalLinearStepper() {
 	const [activeStep, setActiveStep] = useState(0)
-	const [skipped, setSkipped] = useState(new Set<number>())
-
+	const [loading, setLoading] = useState(false)
 	const [stepVal, setStepVal] = useState(initialStepVal)
 
-	const isStepSkipped = (step: number) => {
-		return skipped.has(step)
-	}
-
-	const handleNext = () => {
+	const handleNext = async () => {
 		window.sessionStorage.setItem(String(activeStep), stepVal[activeStep as StepKey])
 
-		let newSkipped = skipped
-		if (isStepSkipped(activeStep)) {
-			newSkipped = new Set(newSkipped.values())
-			newSkipped.delete(activeStep)
+		// If it's semi last step
+		if (activeStep === steps.length - 2) {
+			handleCoverLetterGeneration()
+		} else {
+			setActiveStep((prevActiveStep) => prevActiveStep + 1)
 		}
+	}
 
-		setActiveStep((prevActiveStep) => prevActiveStep + 1)
-		setSkipped(newSkipped)
+	const handleCoverLetterGeneration = async () => {
+		try {
+			setLoading(true)
+			const response = await generateCoverLetter({
+				userInfo: stepVal[0],
+				coverLetterExample: stepVal[1],
+				jobDescription: stepVal[2],
+			})
+
+			console.log('This is response', response)
+			setLoading(false)
+			setActiveStep(3)
+			setValue(3, response)
+		} catch (err) {
+			setLoading(false)
+			setActiveStep(3)
+			setValue(3, 'Something went wrong :(')
+		}
 	}
 
 	const handleBack = () => {
@@ -74,9 +95,6 @@ export default function HorizontalLinearStepper() {
 						optional?: React.ReactNode
 					} = {}
 
-					if (isStepSkipped(index)) {
-						stepProps.completed = false
-					}
 					return (
 						<Step key={label} {...stepProps}>
 							<StepLabel {...labelProps}>{label}</StepLabel>
@@ -96,9 +114,6 @@ export default function HorizontalLinearStepper() {
 				</>
 			) : (
 				<>
-					{/* {activeStep === 0 && (
-						
-					)} */}
 					<StepperELement
 						setValue={setValue}
 						step={activeStep as StepKey}
@@ -115,12 +130,36 @@ export default function HorizontalLinearStepper() {
 							Back
 						</Button>
 						<Box sx={{ flex: '1 1 auto' }} />
-						<Button onClick={handleNext}>
-							{activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+
+						<Button onClick={handleCoverLetterGeneration} disabled={loading}>
+							Regenerate Cover Letter
+							{creteCircularProgress(loading)}
+						</Button>
+						<Button onClick={handleNext} disabled={loading}>
+							{activeStep === steps.length - 2 ? 'Generate cover letter' : 'Next'}
+							{creteCircularProgress(loading)}
 						</Button>
 					</Box>
 				</>
 			)}
 		</Box>
+	)
+}
+
+const creteCircularProgress = (loading: boolean) => {
+	return (
+		loading && (
+			<CircularProgress
+				size={24}
+				sx={{
+					color: green[500],
+					position: 'absolute',
+					top: '50%',
+					left: '50%',
+					marginTop: '-12px',
+					marginLeft: '-12px',
+				}}
+			/>
+		)
 	)
 }
