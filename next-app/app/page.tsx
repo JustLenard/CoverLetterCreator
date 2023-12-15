@@ -1,9 +1,9 @@
 import Link from 'next/link'
+import AppHeader from './components/Header'
 
 const WelcomePage = () => {
 	return (
 		<div>
-			<h1>welcome . Crete cover letter</h1>
 			<Link href={'/create-cover-letter'}>Click here to get started</Link>
 		</div>
 	)

@@ -1,7 +1,13 @@
-import { Box } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+
+import '@fontsource/roboto/300.css'
+import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
+import '@fontsource/roboto/700.css'
+import AppHeader from './components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,16 +19,28 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			{/* <body className={inter.className}>{children}</body> */}
 			<body>
 				<Box
 					sx={{
-						maxWidth: '1280px',
 						minHeight: '100vh',
-						margin: 'auto',
+						display: 'flex',
+						flexDirection: 'column',
 					}}
 				>
-					{children}
+					<AppHeader />
+					<Box
+						sx={{
+							margin: 'auto',
+							flex: '1',
+							maxWidth: '1200px',
+							width: {
+								lg: '1200px',
+								xs: '100%',
+							},
+						}}
+					>
+						{children}
+					</Box>
 				</Box>
 			</body>
 		</html>

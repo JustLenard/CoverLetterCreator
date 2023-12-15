@@ -7,7 +7,7 @@ import StepLabel from '@mui/material/StepLabel'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { useState } from 'react'
-import { CircularProgress, TextField } from '@mui/material'
+import { useTheme, CircularProgress, Divider, TextField, useMediaQuery } from '@mui/material'
 import AppTextField from './AppTextField'
 import { StepsData } from '@/app/utils/data'
 import StepperELement from './StepperELement'
@@ -37,7 +37,10 @@ const initialStepVal: StepVal = {
 }
 
 export default function HorizontalLinearStepper() {
-	const [activeStep, setActiveStep] = useState(0)
+	const theme = useTheme()
+	const downMdBreakpoint = useMediaQuery(theme.breakpoints.down('md'))
+
+	const [activeStep, setActiveStep] = useState(3)
 	const [loading, setLoading] = useState(false)
 	const [stepVal, setStepVal] = useState(initialStepVal)
 
@@ -52,19 +55,34 @@ export default function HorizontalLinearStepper() {
 		}
 	}
 
+	// const handleCoverLetterGeneration = async () => {
+	// 	try {
+	// 		setLoading(true)
+	// 		const response = await generateCoverLetter({
+	// 			userInfo: stepVal[0],
+	// 			coverLetterExample: stepVal[1],
+	// 			jobDescription: stepVal[2],
+	// 		})
+
+	// 		console.log('This is response', response)
+	// 		setLoading(false)
+	// 		setActiveStep(3)
+	// 		setValue(3, response)
+	// 	} catch (err) {
+	// 		setLoading(false)
+	// 		setActiveStep(3)
+	// 		setValue(3, 'Something went wrong :(')
+	// 	}
+	// }
+
 	const handleCoverLetterGeneration = async () => {
 		try {
 			setLoading(true)
-			const response = await generateCoverLetter({
-				userInfo: stepVal[0],
-				coverLetterExample: stepVal[1],
-				jobDescription: stepVal[2],
-			})
-
-			console.log('This is response', response)
-			setLoading(false)
-			setActiveStep(3)
-			setValue(3, response)
+			setTimeout(() => {
+				setLoading(false)
+				setActiveStep(3)
+				setValue(3, 'mate')
+			}, 1000)
 		} catch (err) {
 			setLoading(false)
 			setActiveStep(3)
@@ -73,6 +91,7 @@ export default function HorizontalLinearStepper() {
 	}
 
 	const handleBack = () => {
+		window.sessionStorage.setItem(String(activeStep), stepVal[activeStep as StepKey])
 		setActiveStep((prevActiveStep) => prevActiveStep - 1)
 	}
 
@@ -87,8 +106,18 @@ export default function HorizontalLinearStepper() {
 	}
 
 	return (
-		<Box sx={{ width: '100%' }}>
-			<Stepper activeStep={activeStep}>
+		<Box
+			sx={{
+				width: '100%',
+			}}
+		>
+			<Stepper
+				activeStep={activeStep}
+				orientation={downMdBreakpoint ? 'vertical' : 'horizontal'}
+				sx={{
+					p: '1rem',
+				}}
+			>
 				{steps.map((label, index) => {
 					const stepProps: { completed?: boolean } = {}
 					const labelProps: {
@@ -102,46 +131,52 @@ export default function HorizontalLinearStepper() {
 					)
 				})}
 			</Stepper>
-			{activeStep === steps.length ? (
-				<>
-					<Typography sx={{ mt: 2, mb: 1 }}>
-						All steps completed - you&apos;re finished
-					</Typography>
-					<Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
-						<Box sx={{ flex: '1 1 auto' }} />
-						<Button onClick={handleReset}>Reset</Button>
-					</Box>
-				</>
-			) : (
-				<>
-					<StepperELement
-						setValue={setValue}
-						step={activeStep as StepKey}
-						stepVal={stepVal}
-					/>
 
-					<Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+			<StepperELement setValue={setValue} step={activeStep as StepKey} stepVal={stepVal} />
+
+			<Box sx={{ display: 'flex', flexDirection: 'row', p: '1rem' }}>
+				{activeStep !== 0 && (
+					<Button
+						disabled={activeStep === 0}
+						onClick={handleBack}
+						sx={{ mr: 1 }}
+						variant="outlined"
+						size="small"
+					>
+						Back
+					</Button>
+				)}
+				<Box sx={{ flex: '1 1 auto' }} />
+
+				{activeStep === steps.length - 1 ? (
+					<>
 						<Button
-							color="inherit"
-							disabled={activeStep === 0}
-							onClick={handleBack}
-							sx={{ mr: 1 }}
+							onClick={handleCoverLetterGeneration}
+							disabled={loading}
+							size="small"
+							sx={{
+								mr: '1rem',
+							}}
 						>
-							Back
-						</Button>
-						<Box sx={{ flex: '1 1 auto' }} />
-
-						<Button onClick={handleCoverLetterGeneration} disabled={loading}>
 							Regenerate Cover Letter
 							{creteCircularProgress(loading)}
 						</Button>
-						<Button onClick={handleNext} disabled={loading}>
-							{activeStep === steps.length - 2 ? 'Generate cover letter' : 'Next'}
-							{creteCircularProgress(loading)}
+						<Button onClick={handleReset} size="small" variant="contained">
+							Start again
 						</Button>
-					</Box>
-				</>
-			)}
+					</>
+				) : (
+					<Button
+						onClick={handleNext}
+						disabled={loading}
+						size="small"
+						variant="contained"
+					>
+						{activeStep === steps.length - 2 ? 'Generate cover letter' : 'Next'}
+						{creteCircularProgress(loading)}
+					</Button>
+				)}
+			</Box>
 		</Box>
 	)
 }
