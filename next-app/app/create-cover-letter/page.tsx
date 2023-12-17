@@ -3,9 +3,9 @@ import HorizontalLinearStepper from '../components/stepper/Stepper'
 
 const CreateCoverLetter = () => {
 	return (
-		<div>
+		<>
 			<HorizontalLinearStepper />
-		</div>
+		</>
 	)
 }
 

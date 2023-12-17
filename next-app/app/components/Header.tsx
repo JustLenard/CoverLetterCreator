@@ -1,15 +1,16 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Card, Paper, Typography } from '@mui/material'
 
 const AppHeader = () => {
 	return (
-		<Box
+		<Card
 			sx={{
-				bgcolor: 'red',
+				mb: '1rem',
+				borderRadius: '0px',
 			}}
 		>
 			<Box
 				sx={{
-					maxWidth: '1280px',
+					maxWidth: '1200px',
 					margin: 'auto',
 					display: 'box',
 				}}
@@ -18,7 +19,7 @@ const AppHeader = () => {
 					Cover letter creator
 				</Typography>
 			</Box>
-		</Box>
+		</Card>
 	)
 }
 

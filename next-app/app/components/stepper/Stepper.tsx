@@ -7,7 +7,15 @@ import StepLabel from '@mui/material/StepLabel'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import { useState } from 'react'
-import { useTheme, CircularProgress, Divider, TextField, useMediaQuery } from '@mui/material'
+import {
+	useTheme,
+	CircularProgress,
+	Divider,
+	TextField,
+	useMediaQuery,
+	Paper,
+	Card,
+} from '@mui/material'
 import AppTextField from './AppTextField'
 import { StepsData } from '@/app/utils/data'
 import StepperELement from './StepperELement'
@@ -40,7 +48,7 @@ export default function HorizontalLinearStepper() {
 	const theme = useTheme()
 	const downMdBreakpoint = useMediaQuery(theme.breakpoints.down('md'))
 
-	const [activeStep, setActiveStep] = useState(3)
+	const [activeStep, setActiveStep] = useState(0)
 	const [loading, setLoading] = useState(false)
 	const [stepVal, setStepVal] = useState(initialStepVal)
 
@@ -106,7 +114,8 @@ export default function HorizontalLinearStepper() {
 	}
 
 	return (
-		<Box
+		<Paper
+			elevation={3}
 			sx={{
 				width: '100%',
 			}}
@@ -177,7 +186,7 @@ export default function HorizontalLinearStepper() {
 					</Button>
 				)}
 			</Box>
-		</Box>
+		</Paper>
 	)
 }
 

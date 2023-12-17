@@ -8,6 +8,7 @@ export type StepsDataT = {
 	initialData: string
 	title: string
 	texts: string[]
+	textAreaLabel: string
 }
 
 export type StepKey = 0 | 1 | 2 | 3

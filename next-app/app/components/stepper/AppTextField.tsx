@@ -1,14 +1,14 @@
 import { StepKey } from '@/app/utils/types'
 import { Box, TextField } from '@mui/material'
-import { Dispatch, SetStateAction } from 'react'
 
 interface Props {
 	initialValue: string
 	setValue: (step: StepKey, value: string) => void
 	step: StepKey
+	label: string
 }
 
-const AppTextField: React.FC<Props> = ({ setValue, initialValue, step }) => {
+const AppTextField: React.FC<Props> = ({ setValue, initialValue, step, label }) => {
 	return (
 		<Box
 			sx={{
@@ -17,7 +17,7 @@ const AppTextField: React.FC<Props> = ({ setValue, initialValue, step }) => {
 			}}
 		>
 			<TextField
-				label="Outlined"
+				label={label}
 				variant="outlined"
 				onChange={(e) => setValue(step, e.target.value)}
 				value={initialValue}

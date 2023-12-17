@@ -22,7 +22,12 @@ const StepperELement: React.FC<Props> = ({ step, setValue, stepVal }) => {
 				},
 			}}
 		>
-			<AppTextField initialValue={stepVal[step]} setValue={setValue} step={step} />
+			<AppTextField
+				initialValue={stepVal[step]}
+				setValue={setValue}
+				step={step}
+				label={stepData.textAreaLabel}
+			/>
 			<Box
 				sx={{
 					flex: 1,

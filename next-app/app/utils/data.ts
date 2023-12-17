@@ -2,6 +2,7 @@ import { StepsDataT } from './types'
 
 export const StepsData: StepsDataT[] = [
 	{
+		textAreaLabel: 'Crafting Your Professional Profile',
 		initialData: `Name:
 Cociug Vitalie
 
@@ -76,14 +77,15 @@ Scss, Styled Components
 Jest
 Unit Testing, React Testing Library`,
 		texts: [
-			'Tell about yourlsef. Who are your? What can you? What did you do? What skills do you have? Why should you be hired for this job.',
-			'Personally I just copy and pasted information from my CV (see the default text on the left). It is good to also write some short stories / events of situations that my showcase a particular skill of your that may distiguish you from other candidates',
+			'Share insightful details about your professional journey and the skills that set you apart. Your input will steer the narrative toward a compelling outcome that underscores your strengths.',
+			`If time is a constraint, don't worry. Feel free to streamline the process by copying and pasting your CV. Your unique experiences and skills are the building blocks of a cover letter that stands out. Let's make your story resonate with the opportunities ahead.`,
 			'Give the AI something to work with',
 		],
 		title: 'Personal information',
 	},
 
 	{
+		textAreaLabel: 'A cover letter example / template',
 		initialData: `Dear Hiring Team at EveryMatrix,
 
 I hope this message finds you well. My name is Cociug Vitalie, a passionate, I am a self-taught developer with approximately 3 years of coding experience. I am writing to express my immense interest in the Frontend Developer position at your company, EveryMatrix. My unique blend of development skills, adaptability, and resilience, along with my desire to be a part of a groundbreaking organization, make me a strong contender for this role.
@@ -102,15 +104,16 @@ Thank you for taking the time to consider my application.
 
 Sincerely,
 Cociug Vitalie
-        `,
+`,
+		title: 'Cover letter example',
 		texts: [
-			'Give the AI a cover letter example to work with if you want. This makes the cover letter that will be created to have a more predictable structure.',
+			'Provide a cover letter example to guide the generation process. This ensures a more tailored and predictable structure for your cover letter.',
 			'Feel free to write your own example of cover letter, copy and paste a already existing or using this already created example',
 			'If you want a more unpredictable result, delete the existing text and leave the field empty',
 		],
-		title: 'Cover letter example',
 	},
 	{
+		textAreaLabel: 'Job description',
 		initialData: `Full Stack Developer (React/TypeScript/AWS Lambda) x 4 - All Levels - Remote - New
 
 £50,000 - £75,000 + Bonus + Excellent Benefits + Remote Working
@@ -145,16 +148,17 @@ What's on Offer?
 Please send your CV for an informal chat and full job description.
 
 Excellent opportunity to join an organisation that is willing to invest heavily in your development and future!        
-        `,
+`,
+		title: 'Job/Company Description',
 		texts: [
-			'Write useful information about the job about the company. Maybe the company has a great culture. Write it in here. Maybe there are some specific mentions that the job need attention to detail. This will help nudge the outcome to produce something that will empahsize this.',
-			'Also, feel free to just copy and paste the job description if you are lazy',
+			`Share insights into the company's culture, emphasizing its strengths and unique qualities. If there are notable aspects that make the workplace exceptional, highlight them.`,
+			'Detail the intricacies of the job, focusing on aspects that demand attention to detail. This information is crucial for aligning your skills with the job requirements and ensuring a successful outcome.',
 		],
-		title: 'Job / company description',
 	},
 	{
-		title: 'Finish',
+		textAreaLabel: 'Final Result',
 		texts: ['Here is your cover letter'],
+		title: 'Finish',
 		initialData: '',
 	},
 ]
