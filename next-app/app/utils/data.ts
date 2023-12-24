@@ -1,4 +1,8 @@
 import { StepsDataT } from './types'
+import Looks4OutlinedIcon from '@mui/icons-material/Looks4Outlined'
+import Looks3OutlinedIcon from '@mui/icons-material/Looks3Outlined'
+import LooksTwoOutlinedIcon from '@mui/icons-material/LooksTwoOutlined'
+import LooksOneOutlinedIcon from '@mui/icons-material/LooksOneOutlined'
 
 export const StepsData: StepsDataT[] = [
 	{
@@ -162,3 +166,26 @@ Excellent opportunity to join an organisation that is willing to invest heavily 
 		initialData: '',
 	},
 ]
+
+export const cardsData = [
+	{
+		title: 'Who are you?',
+		content: 'Tell us some information about yourself',
+		icon: LooksOneOutlinedIcon,
+	},
+	{
+		title: 'Chose template',
+		content: 'If you want a more structured output, create a template for your cover letter',
+		icon: LooksTwoOutlinedIcon,
+	},
+	{
+		title: 'What is the job?',
+		content: 'Tell us about the job. Feel free to just copy paste the job posting',
+		icon: Looks3OutlinedIcon,
+	},
+	{
+		title: 'You are done!',
+		content: 'Feel free to use your tailor made cover letter',
+		icon: Looks4OutlinedIcon,
+	},
+] as const

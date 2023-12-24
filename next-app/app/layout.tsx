@@ -34,6 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 								lg: '1200px',
 								xs: '100%',
 							},
+							p: '1rem',
+							boxSizing: 'border-box',
 						}}
 					>
 						{children}
