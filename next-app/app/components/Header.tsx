@@ -1,8 +1,9 @@
-import { Box, Card, Paper, Typography } from '@mui/material'
+import { Box, Button, Card, Paper, Typography } from '@mui/material'
+import Link from 'next/link'
 
 const AppHeader = () => {
 	return (
-		<Card
+		<Box
 			sx={{
 				mb: '1rem',
 				borderRadius: '0px',
@@ -12,14 +13,35 @@ const AppHeader = () => {
 				sx={{
 					maxWidth: '1200px',
 					margin: 'auto',
-					display: 'box',
+					// display: 'box',
+					display: 'flex',
+					justifyContent: 'space-between',
 				}}
 			>
-				<Typography variant="h5" p={'1rem'}>
-					Cover letter creator
-				</Typography>
+				<Link href={'/'}>
+					<Typography
+						variant="h5"
+						p={'1rem'}
+						fontWeight={'bold'}
+						sx={{
+							textDecorationLine: 'underline',
+						}}
+					>
+						Ai Tools
+					</Typography>
+				</Link>
+				{/* <Box
+					sx={{
+						display: 'inline-block',
+						my: 'auto',
+					}}
+				>
+					<Link href={'/create-cover-letter'}>
+						<Button>Generate Cover Letter</Button>
+					</Link>
+				</Box> */}
 			</Box>
-		</Card>
+		</Box>
 	)
 }
 

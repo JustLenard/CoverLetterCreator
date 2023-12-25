@@ -7,8 +7,6 @@ import Image from 'next/image'
 import corpcommentImg from '@/public/corpcomment.png'
 
 const WelcomePage = () => {
-	// const theme = useTheme()
-	// const UpMdBreakpoint = useMediaQuery(theme.breakpoints.up('md'))
 	return (
 		<Box
 			sx={{
@@ -18,15 +16,44 @@ const WelcomePage = () => {
 				minHeight: '100%',
 			}}
 		>
-			<Stack direction={'row'} mb={'5rem'}>
-				<div>
-					<Typography variant="h3"> Ai Cover letter creator</Typography>
-					<Typography variant="body2" mb={'1rem'}>
-						Are you tired of creating cover letters over and over again? Me too! So I
-						created this website to make it easier to create them using Ai in 3 easy
-						steps
+			<Stack
+				direction={'row'}
+				mb={{
+					xs: '2rem',
+					md: '5rem',
+				}}
+				justifyContent={'space-between'}
+			>
+				<Box
+					sx={{
+						maxWidth: {
+							xs: '100%',
+							md: '24rem',
+						},
+						flex: 1,
+						display: {
+							xs: 'flex',
+							md: 'block',
+						},
+						justifyContent: 'center',
+						flexDirection: 'column',
+						alignItems: 'center',
+						textAlign: 'center',
+					}}
+				>
+					<Typography variant="h3" fontWeight={'500'}>
+						Ai Cover Letter Creator
 					</Typography>
-					<Typography variant="body2">{"Don't waste time again writing them"}</Typography>
+					<Typography variant="body1" mb={'1rem'}>
+						Are you tired of creating cover letters over and over again? Me too!
+					</Typography>
+					<Typography variant="body1" mb={'1rem'}>
+						This is why this website exists. Create your cover letter in just 3 steps
+						using the AI behind ChatGPT
+					</Typography>
+					<Typography variant="body1">
+						{"Don't waste your time again writing them!"}
+					</Typography>
 
 					<Button
 						variant="contained"
@@ -34,9 +61,9 @@ const WelcomePage = () => {
 							mt: '2rem',
 						}}
 					>
-						<Link href={'/create-cover-letter'}>Click here to get started</Link>
+						<Link href={'/create-cover-letter'}>Generate Cover letter</Link>
 					</Button>
-				</div>
+				</Box>
 				<Box
 					sx={{
 						display: {
@@ -44,16 +71,75 @@ const WelcomePage = () => {
 							md: 'block',
 							p: '1rem',
 						},
+						position: 'relative',
 					}}
 				>
-					<Image
-						src={corpcommentImg}
-						alt="Ricardo portrait"
-						width="400"
-						height="400"
-						quality="95"
-						priority={true}
-					/>
+					<Box
+						sx={{
+							border: '1px solid black',
+							rotate: '3deg',
+							position: 'absolute',
+							display: 'block',
+							height: '100%',
+							width: '100%',
+						}}
+					></Box>
+					<Box
+						sx={{
+							border: '1px solid black',
+							rotate: '-2deg',
+							position: 'absolute',
+							display: 'block',
+							height: '100%',
+							width: '100%',
+							zIndex: 5,
+						}}
+					></Box>
+					<Box
+						sx={{
+							width: '400px',
+							minHeight: '400px',
+							p: '2rem',
+							border: '1px solid black',
+							backgroundColor: 'white',
+							position: 'relative',
+							zIndex: 10,
+						}}
+					>
+						<Typography>
+							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
+							exercitation do eiusmod exercitation.
+						</Typography>
+
+						<Typography>
+							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
+							exercitation do eiusmod exercitation.
+						</Typography>
+						<Typography>
+							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
+							exercitation do eiusmod exercitation.
+						</Typography>
+						<Typography>
+							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
+							exercitation do eiusmod exercitation.
+						</Typography>
+						<Typography>
+							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
+							exercitation do eiusmod exercitation.
+						</Typography>
+						<Typography>
+							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
+							exercitation do eiusmod exercitation.
+						</Typography>
+						{/* <Image
+							src={corpcommentImg}
+							alt="Ricardo portrait"
+							width="400"
+							height="400"
+							quality="95"
+							priority={true}
+						/> */}
+					</Box>
 				</Box>
 			</Stack>
 

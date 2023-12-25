@@ -81,13 +81,13 @@ Scss, Styled Components
 Jest
 Unit Testing, React Testing Library`,
 		texts: [
-			'Share insightful details about your professional journey and the skills that set you apart. Your input will steer the narrative toward a compelling outcome that underscores your strengths.',
-			`If time is a constraint, don't worry. Feel free to streamline the process by copying and pasting your CV. Your unique experiences and skills are the building blocks of a cover letter that stands out. Let's make your story resonate with the opportunities ahead.`,
+			'Share insightful details about your professional journey and the skills that set you apart. Your input will steer the AI toward a compelling outcome that highlight your strengths.',
+			`Your unique experiences and skills are the building blocks of a cover letter that stands out. Let's make your story resonate with the opportunities ahead.`,
+			`If time is a constraint, don't worry. Feel free to streamline the process by pasting your Resume in here.`,
 			'Give the AI something to work with',
 		],
 		title: 'Personal information',
 	},
-
 	{
 		textAreaLabel: 'A cover letter example / template',
 		initialData: `Dear Hiring Team at EveryMatrix,
@@ -156,36 +156,38 @@ Excellent opportunity to join an organisation that is willing to invest heavily 
 		title: 'Job/Company Description',
 		texts: [
 			`Share insights into the company's culture, emphasizing its strengths and unique qualities. If there are notable aspects that make the workplace exceptional, highlight them.`,
-			'Detail the intricacies of the job, focusing on aspects that demand attention to detail. This information is crucial for aligning your skills with the job requirements and ensuring a successful outcome.',
+			'Alternatively, just paste the job post in here',
 		],
 	},
 	{
 		textAreaLabel: 'Final Result',
-		texts: ['Here is your cover letter'],
+		texts: ['You are done!', `Take this cover letter and go get your dream job!`],
 		title: 'Finish',
-		initialData: '',
+		initialData: 'Enjoy!',
 	},
 ]
 
 export const cardsData = [
 	{
 		title: 'Who are you?',
-		content: 'Tell us some information about yourself',
+		content:
+			'Paste / write something about yourself. Feel free to just use your resume or linkedIn',
 		icon: LooksOneOutlinedIcon,
 	},
 	{
 		title: 'Chose template',
-		content: 'If you want a more structured output, create a template for your cover letter',
+		content:
+			'If you want a more structured output, create a template for your cover letter or leave it empty for a more random response',
 		icon: LooksTwoOutlinedIcon,
 	},
 	{
-		title: 'What is the job?',
+		title: `What's the job?`,
 		content: 'Tell us about the job. Feel free to just copy paste the job posting',
 		icon: Looks3OutlinedIcon,
 	},
 	{
 		title: 'You are done!',
-		content: 'Feel free to use your tailor made cover letter',
+		content: 'Use your tailor made cover letter wherever you want!',
 		icon: Looks4OutlinedIcon,
 	},
 ] as const

@@ -35,7 +35,7 @@ const AppCard: React.FC<Props> = ({ icon, title, content }) => {
 						fontSize: '3rem',
 					},
 				})}
-				<Typography variant="h5" my={'.5rem'}>
+				<Typography variant="h5" my={'.5rem'} textAlign={'center'}>
 					{title}
 				</Typography>
 				<Typography variant="body1" textAlign={'center'}>
