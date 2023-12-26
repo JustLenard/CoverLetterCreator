@@ -18,7 +18,7 @@ import {
 } from '@mui/material'
 import AppTextField from './AppTextField'
 import { StepsData } from '@/app/utils/data'
-import StepperELement from './StepperELement'
+import StepperELement from './StepperElement'
 import { StepKey, StepVal } from '@/app/utils/types'
 import { generateCoverLetter } from '@/app/api/generateCoverLetter'
 import { green } from '@mui/material/colors'

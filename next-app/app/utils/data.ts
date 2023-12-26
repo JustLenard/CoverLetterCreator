@@ -191,3 +191,9 @@ export const cardsData = [
 		icon: Looks4OutlinedIcon,
 	},
 ] as const
+
+export const frontPageCoverLetter = `Dear [Employer's Name], \n
+	I am writing to express my interest in the [Job Title] position at [Company Name], as advertised on [where you found the job posting]. With a strong background in [relevant skills or experience], I am confident in my ability to contribute effectively to your team. \n
+	In my previous role at [Previous Company], I [describe a key accomplishment or responsibility that is relevant to the new position]. This experience has equipped me with a solid foundation in [specific skills or knowledge areas mentioned in the job description]. \n
+	I am impressed by [Company Name]'s dedication to [specific aspect of the company, such as quality, customer satisfaction, or community involvement], and I am eager to bring my skills and enthusiasm to your team... \n
+	Sincerely, [Your Name]`

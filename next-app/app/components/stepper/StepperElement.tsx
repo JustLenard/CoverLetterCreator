@@ -23,7 +23,7 @@ const StepperELement: React.FC<Props> = ({ step, setValue, stepVal }) => {
 			}}
 		>
 			<AppTextField
-				initialValue={stepVal[step]}
+				value={stepVal[step]}
 				setValue={setValue}
 				step={step}
 				label={stepData.textAreaLabel}
@@ -41,10 +41,14 @@ const StepperELement: React.FC<Props> = ({ step, setValue, stepVal }) => {
 					}}
 					elevation={3}
 				>
-					<Typography variant="h5">{stepData.title}</Typography>
+					<Typography variant="h5" fontWeight={'500'}>
+						{stepData.title}
+					</Typography>
 
 					{stepData.texts.map((text, i) => (
-						<p key={i}>{text}</p>
+						<Typography variant="body1" key={i} my={'1rem'}>
+							{text}
+						</Typography>
 					))}
 				</Paper>
 			</Box>

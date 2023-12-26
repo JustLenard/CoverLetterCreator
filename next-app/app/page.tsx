@@ -5,6 +5,7 @@ import AppCards from './components/AppCards'
 import Image from 'next/image'
 
 import corpcommentImg from '@/public/corpcomment.png'
+import CoverLetter from './components/CoverLetter'
 
 const WelcomePage = () => {
 	return (
@@ -64,83 +65,7 @@ const WelcomePage = () => {
 						<Link href={'/create-cover-letter'}>Generate Cover letter</Link>
 					</Button>
 				</Box>
-				<Box
-					sx={{
-						display: {
-							xs: 'none',
-							md: 'block',
-							p: '1rem',
-						},
-						position: 'relative',
-					}}
-				>
-					<Box
-						sx={{
-							border: '1px solid black',
-							rotate: '3deg',
-							position: 'absolute',
-							display: 'block',
-							height: '100%',
-							width: '100%',
-						}}
-					></Box>
-					<Box
-						sx={{
-							border: '1px solid black',
-							rotate: '-2deg',
-							position: 'absolute',
-							display: 'block',
-							height: '100%',
-							width: '100%',
-							zIndex: 5,
-						}}
-					></Box>
-					<Box
-						sx={{
-							width: '400px',
-							minHeight: '400px',
-							p: '2rem',
-							border: '1px solid black',
-							backgroundColor: 'white',
-							position: 'relative',
-							zIndex: 10,
-						}}
-					>
-						<Typography>
-							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
-							exercitation do eiusmod exercitation.
-						</Typography>
-
-						<Typography>
-							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
-							exercitation do eiusmod exercitation.
-						</Typography>
-						<Typography>
-							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
-							exercitation do eiusmod exercitation.
-						</Typography>
-						<Typography>
-							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
-							exercitation do eiusmod exercitation.
-						</Typography>
-						<Typography>
-							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
-							exercitation do eiusmod exercitation.
-						</Typography>
-						<Typography>
-							Ad incididunt minim fugiat ad pariatur tempor consectetur exercitation
-							exercitation do eiusmod exercitation.
-						</Typography>
-						{/* <Image
-							src={corpcommentImg}
-							alt="Ricardo portrait"
-							width="400"
-							height="400"
-							quality="95"
-							priority={true}
-						/> */}
-					</Box>
-				</Box>
+				<CoverLetter />
 			</Stack>
 
 			<AppCards />
