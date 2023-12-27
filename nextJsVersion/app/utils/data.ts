@@ -83,7 +83,7 @@ Unit Testing, React Testing Library`,
 		texts: [
 			'Share insightful details about your professional journey and the skills that set you apart. Your input will steer the AI toward a compelling outcome that highlight your strengths.',
 			`Your unique experiences and skills are the building blocks of a cover letter that stands out. Let's make your story resonate with the opportunities ahead.`,
-			`If time is a constraint, don't worry. Feel free to streamline the process by pasting your Resume in here.`,
+			`Feel free to streamline the process by pasting your resume in here.`,
 			'Give the AI something to work with',
 		],
 		title: 'Personal information',
@@ -111,8 +111,8 @@ Cociug Vitalie
 `,
 		title: 'Cover letter example',
 		texts: [
-			'Provide a cover letter example to guide the generation process. This ensures a more tailored and predictable structure for your cover letter.',
-			'Feel free to write your own example of cover letter, copy and paste a already existing or using this already created example',
+			'Provide a cover letter template to guide the generation process. This ensures a more tailored and predictable structure for your cover letter.',
+			'Write your own example of a cover letter, copy and paste a already existing one or use this already provided cover letter',
 			'If you want a more unpredictable result, delete the existing text and leave the field empty',
 		],
 	},
@@ -153,7 +153,7 @@ Please send your CV for an informal chat and full job description.
 
 Excellent opportunity to join an organisation that is willing to invest heavily in your development and future!        
 `,
-		title: 'Job/Company Description',
+		title: 'Job / Company Description',
 		texts: [
 			`Share insights into the company's culture, emphasizing its strengths and unique qualities. If there are notable aspects that make the workplace exceptional, highlight them.`,
 			'Alternatively, just paste the job post in here',

@@ -53,7 +53,8 @@ build/Release
 # Dependency directories
 
 node_modules/
-next-app/node_modules
+nextJsVersion/node_modules
+bunVersion/node_modules
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -98,8 +99,12 @@ web_modules/
 # dotenv environment variable files
 
 coverLetters
-next-app/.env
-/next-app/.env
+nextJsVersion/node_modules
+bunVersion/.env
+/bunVersion/.env
+
+nextJsVersion/.env
+/nextJsVersion/.env
 .env
 .env.development.local
 .env.test.local
