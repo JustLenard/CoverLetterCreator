@@ -22,6 +22,9 @@ import StepperELement from './StepperElement'
 import { StepKey, StepVal } from '@/app/utils/types'
 import { generateCoverLetter } from '@/app/api/generateCoverLetter'
 import { green } from '@mui/material/colors'
+import { wordsLen } from '@/app/utils/funtions'
+import { MAX_WORDS, MIN_WORDS } from '@/app/utils/constants'
+import { creteCircularProgress } from '../createCircularProgress'
 
 const steps = [
 	'Inforamtion about yourself',
@@ -44,13 +47,17 @@ const initialStepVal: StepVal = {
 	3: getStepValue(3),
 }
 
-export default function HorizontalLinearStepper() {
+export const HorizontalLinearStepper = () => {
 	const theme = useTheme()
 	const downMdBreakpoint = useMediaQuery(theme.breakpoints.down('md'))
 
 	const [activeStep, setActiveStep] = useState(0)
 	const [loading, setLoading] = useState(false)
 	const [stepVal, setStepVal] = useState(initialStepVal)
+
+	const textLength = wordsLen(stepVal[activeStep as StepKey])
+	const minWordsErr = (activeStep === 0 || 2) && textLength < MIN_WORDS
+	const maxWordsErr = (activeStep === 0 || 2) && textLength > MAX_WORDS
 
 	const handleNext = async () => {
 		window.sessionStorage.setItem(String(activeStep), stepVal[activeStep as StepKey])
@@ -190,20 +197,4 @@ export default function HorizontalLinearStepper() {
 	)
 }
 
-const creteCircularProgress = (loading: boolean) => {
-	return (
-		loading && (
-			<CircularProgress
-				size={24}
-				sx={{
-					color: green[500],
-					position: 'absolute',
-					top: '50%',
-					left: '50%',
-					marginTop: '-12px',
-					marginLeft: '-12px',
-				}}
-			/>
-		)
-	)
-}
+export default HorizontalLinearStepper
