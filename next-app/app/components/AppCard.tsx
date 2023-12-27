@@ -1,5 +1,4 @@
-import { Avatar, Box, Grid, Typography } from '@mui/material'
-import Looks4OutlinedIcon from '@mui/icons-material/Looks4Outlined'
+import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 
 interface Props {

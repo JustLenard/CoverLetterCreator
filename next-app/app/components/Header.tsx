@@ -1,4 +1,4 @@
-import { Box, Button, Card, Paper, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import Link from 'next/link'
 
 const AppHeader = () => {
@@ -30,16 +30,6 @@ const AppHeader = () => {
 						Ai Tools
 					</Typography>
 				</Link>
-				{/* <Box
-					sx={{
-						display: 'inline-block',
-						my: 'auto',
-					}}
-				>
-					<Link href={'/create-cover-letter'}>
-						<Button>Generate Cover Letter</Button>
-					</Link>
-				</Box> */}
 			</Box>
 		</Box>
 	)

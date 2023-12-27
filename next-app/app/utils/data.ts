@@ -4,7 +4,7 @@ import Looks3OutlinedIcon from '@mui/icons-material/Looks3Outlined'
 import LooksTwoOutlinedIcon from '@mui/icons-material/LooksTwoOutlined'
 import LooksOneOutlinedIcon from '@mui/icons-material/LooksOneOutlined'
 
-export const StepsData: StepsDataT[] = [
+export const stepsData: StepsDataT[] = [
 	{
 		textAreaLabel: 'Crafting Your Professional Profile',
 		initialData: `Name:

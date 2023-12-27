@@ -1,8 +1,8 @@
 'use client'
 
-import { Box, Typography } from '@mui/material'
-import { frontPageCoverLetter } from '../utils/data'
+import { Box } from '@mui/material'
 import { TypeAnimation } from 'react-type-animation'
+import { frontPageCoverLetter } from '../utils/data'
 
 const CURSOR_CLASS_NAME = 'custom-type-animation-cursor'
 

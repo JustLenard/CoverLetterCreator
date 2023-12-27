@@ -8,13 +8,19 @@ interface Props {
 	setValue: (step: StepKey, value: string) => void
 	step: StepKey
 	label: string
+	minWordsErr: boolean
+	maxWordsErr: boolean
 }
 
-const AppTextField: React.FC<Props> = ({ setValue, value, step, label }) => {
-	console.log('This is step', step)
+const AppTextField: React.FC<Props> = ({
+	setValue,
+	value,
+	step,
+	label,
+	minWordsErr,
+	maxWordsErr,
+}) => {
 	const textLength = wordsLen(value)
-	const showMinWordsErr = (step === 0 || 2) && textLength < MIN_WORDS
-	const showMaxWordsErr = (step === 0 || 2) && textLength > MAX_WORDS
 	return (
 		<Box
 			sx={{
@@ -39,14 +45,14 @@ const AppTextField: React.FC<Props> = ({ setValue, value, step, label }) => {
 					alignItems: 'center',
 				}}
 			>
-				{showMinWordsErr && (
+				{minWordsErr && (
 					<Typography
 						variant="body2"
 						textAlign={'left'}
 						color={'red'}
 					>{`* You need at least ${MIN_WORDS} words to proceed `}</Typography>
 				)}
-				{showMaxWordsErr && (
+				{maxWordsErr && (
 					<Typography
 						variant="body2"
 						textAlign={'left'}
