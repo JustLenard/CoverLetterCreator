@@ -28,6 +28,8 @@ export const generateCoverLetter = async (params: FormDataType) => {
 		],
 	})
 
+	console.log('This is response', response)
+
 	const aiRespone = response.data.choices[0].message?.content ?? 'Something went wrong :('
 
 	return aiRespone
