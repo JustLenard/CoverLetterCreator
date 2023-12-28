@@ -1,3 +1,5 @@
+'use client'
+
 import { MAX_WORDS, MIN_WORDS } from '@/app/utils/constants'
 import { wordsLen } from '@/app/utils/funtions'
 import { StepKey } from '@/app/utils/types'
@@ -21,6 +23,7 @@ const AppTextField: React.FC<Props> = ({
 	maxWordsErr,
 }) => {
 	const textLength = wordsLen(value)
+
 	return (
 		<Box
 			sx={{

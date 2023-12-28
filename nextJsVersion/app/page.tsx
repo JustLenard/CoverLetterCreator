@@ -1,10 +1,7 @@
+import { Box, Button, Stack, Typography } from '@mui/material'
 import Link from 'next/link'
-import AppHeader from './components/Header'
-import { Box, Button, Stack, Typography, useMediaQuery, useTheme } from '@mui/material'
 import AppCards from './components/AppCards'
-import Image from 'next/image'
 
-import corpcommentImg from '@/public/corpcomment.png'
 import CoverLetter from './components/CoverLetter'
 
 const WelcomePage = () => {
