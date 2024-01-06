@@ -53,6 +53,7 @@ const CreateCoverLetterPage = () => {
 		}
 	}
 
+	console.time()
 	const handleCoverLetterGeneration = async () => {
 		try {
 			setLoading(true)
@@ -72,6 +73,7 @@ const CreateCoverLetterPage = () => {
 			setValue(3, 'Something went wrong :(')
 		}
 	}
+	console.timeEnd()
 
 	/**
 	 * Mock up the cover letter creation
