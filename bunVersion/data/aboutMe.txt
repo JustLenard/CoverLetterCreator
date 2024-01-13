@@ -2,54 +2,62 @@ Name:
 Cociug Vitalie
 
 Introduction:
-I am a self-taught developer with approximately 3 years of coding experience. Through my chosen path, I've cultivated a strong sense of autonomy and a can-do attitude. I excel in navigating ambiguity and consistently hit the ground running.
+Self-taught developer with 3 years of coding experience, embodying
+autonomy, a proactive can-do attitude, and strong problem solving
+skills. I specialize in implementing best practices and ensuring
+meticulous attention to detail in development tasks. Nice to meet you.
 
 Professional Experience
-Tara Interactive, Web Developer
+
+RoyalRoad, React Native / FrontEnd developer
+Jul 2023 – present
+Ported website (royalroad.com) to React Native.
+Identified threats and helped prevent traffic from bots
+
+Tara Interactive, Full Stack Developer
 Feb 2022 – Jun 2023
-•I actively contributed to two React projects, solo-ported one of them to React Native, and played a crucial role in developing the React front-end for a complex surveillance application with micro frontends, microservices, multitenancy, websockets, and real-time surveillance features.
+Worked on multiple React projects from start to finish
+Developed a notification system using Socket.Io
+Developed complex state management systems using Redux, Redux
+Toolkit and Redux Thunk and React's useContext hook
+Created and maintained API endpoints in NodeJs, NestJs and C#.
+Implement internationalization using react-i18next
+Conducted code profiling to identify bottlenecks, addressed the
+identified issues, and optimized both front-end and back-end code
+Did Unit testing and End to End testing using Jest and Puppeteer
+Deployed code to Production, Staging and QA environments
+Implemented Stripe integration for client's e-commerce website
+Developed reusable, component-based code following modern best
+practices to enhance code maintainability and scalability.
+Solo ported a website to React Native
+Implemented authentication, authorization, GDPR, file uploads /
+downloads, micro-services and CRUD on different projects.
 
-•I assumed a proactive role in project ownership, taking charge of coding new features, resolving issues, and conducting analyses to evaluate the benefits and trade-offs of different solutions.
-
-•Provided estimates and technical input to help guide feature development, including raising questions about the necessity of features, suggesting alternatives, and explaining any difficulties or offering solutions
-
-•Deployed code to Production, Staging and QA environments
-
-•Participated in code reviews and provided feedback to improve code quality and maintainability
-
-•Helped create procedures and guidelines for project development, ensuring consistency and efficiency in the development process
-
-•Helped colleagues solve technical problems by offering guidance, sharing knowledge, and suggesting solutions
-
-
-Projects I'be built:
-Chatify, Chat application
-
-Github - https://github.com/JustLenard/webSocketApp
-Live Demo - https://chatify-app.up.railway.app/login
-
+Projects I've built:
+Chatify, Full Stack Chat application
+Github: github.com/JustLenard/webSocketApp
+Live Demo: chatify-app.up.railway.app
 Features:
-•Real time chat application
-•Responsive design
-•Group and one on one chat
-•Ability to chat with some unique personalities created with OpenAi's gpt-3.5 model
-•CRUD (Create, read, edit and delete) functionality for messages
-•Real time, persistent notifications created when you receive a message
-•Sign up, persistent login and automatic access token refresh
+Real time, full stack chat application
+Responsive design
+Group and one on one chat
+Ability to chat with some unique personalities created with OpenAi's
+gpt-3.5 model
+CRUD (Create, read, edit and delete) functionality for messages
+Real time, persistent notifications created when you receive a
+message
+Sign up, persistent login and automatic access token refresh
+Frontend Technologies: React, TypeScript, Redux Toolkit, Context API,
+Socket.IO, Axios and axios interceptors
+Backend Technologies: NestJS, TypeScript, PostgreSQL, TypeORM,
+JWT, OpenAI API (gpt-3.5-turbo), Argon2, Guards
 
-Frontend Technologies:
-•React +TypeScript
-•Redux Toolkit and Context API
-•Socket.IO
-•Axios and axios interceptors
-
-Backend Technologies:
-•NestJS + TypeScript
-•PostgreSQL (TypeORM for database interactions)
-•JWT for authentication and JWT guards for authorization
-•OpenAI API (gpt-3.5-turbo)
-•Argon2 for hashing data
-
+Ai Cover Letter Creator
+Github: github.com/JustLenard/CoverLetterCreator
+Live Demo: https://ai-cover-letter-creator.up.railway.app
+This app creates a customized cover letter in just 3 easy steps with the
+power of ChatGpt 4.
+Technologies: NextJs, TypeScript, MUI, Tailwind CSS
 
 My Skills
 React / React NativeRedux 

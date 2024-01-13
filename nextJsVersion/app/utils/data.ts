@@ -90,23 +90,18 @@ Unit Testing, React Testing Library`,
 	},
 	{
 		textAreaLabel: 'A cover letter example / template',
-		initialData: `Dear Hiring Managers,
+		initialData: `Dear Hiring Team at EveryMatrix,
 
-I hope this letter finds you well. I am writing to express my interest in the junior software engineer position at Bending Spoons. With my self-taught development background and experience in web and mobile development, I believe I would be a valuable addition to your team.
+I am a self-taught developer with approximately 3 years of coding experience. I am writing to express my immense interest in the Frontend Developer position at your company, EveryMatrix. My unique blend of development skills, adaptability, and resilience, along with my desire to be a part of a groundbreaking organization, make me a strong contender for this role.
 		
-During my time at Tara Interactive as a web developer, I had the opportunity to contribute to React projects, including a complex surveillance application with micro frontends, multitenancy, and real-time surveillance features. I took ownership of coding new features, resolving issues, and evaluating different solutions. Additionally, I played a crucial role in solo-porting a React project to React Native, showcasing my ability to adapt and learn new technologies.
+At Tara Interactive, I actively contributed to two React projects, one of which I then solo-ported to React Native. Additionally, I was an integral part of a 3 man team that developed a complex surveillance application with microservices, real-time surveillance features, and more. I took the initiative in project ownership, coding new features, and resolving issues. I also played a role in deploying codes across multiple environments and ensuring code quality and maintainability through constructive code reviews.
 		
-One of my notable projects is Chatify, a real-time chat application built with React and TypeScript. It features group and one-on-one chat, CRUD functionality for messages, real-time notifications, and integration with OpenAI's gpt-3.5 model. You can find the code on my GitHub (https://github.com/JustLenard/webSocketApp) and a live demo at (https://chatify-app.up.railway.app/login).
+One of my proudest achievements is the building of Chatify, a real-time chat application featuring group and one-on-one chat, CRUD operations, real-time notifications, and integration with OpenAI's gpt-3.5 model. The project was a testament to my ability to utilize modern technologies and frameworks effectively, a skill that directly aligns with the requirements of your job description.
 		
-In terms of skills, I have experience with React, React Native, Redux Toolkit, Node.js, NestJS, TypeScript, PostgreSQL, and DevOps tools like Docker. I am also proficient in HTML, CSS, and have knowledge of testing frameworks like Jest.
+I am quite familiar with the technologies you use - React, Redux, WebPack, NodeJS, and working with HTTP2 and WebSockets APIs, as well as deploying containerized apps via Docker, Kubernetes, and continuous delivery pipelines. I can confidently say that my experiences have prepared me well enough to make significant contributions to the EMFE department.
 		
-After reviewing the job description, I believe I possess the qualities and abilities that Bending Spoons is seeking. I am a quick learner with logical-analytical abilities, driven to achieve excellence in my work, and passionate about software development. I am also humble, detail-oriented, and proactive in seeking out new opportunities and ideas.
 		
-I am enthusiastic about learning Python, Swift, and Kotlin, and I am confident that with my can-do attitude and autonomy, I can adapt quickly to new technologies.
-		
-If given the opportunity, I would be honored to contribute to Bending Spoons and its mission to become the world's best app developer. I am excited about the prospect of working with talented and knowledgeable colleagues while continuously learning and making a significant impact.
-		
-Thank you for considering my application. I look forward to the possibility of discussing how my skills and experience can contribute to your team. Please find my attached resume for more details.
+Thank you for taking the time to consider my application. 
 		
 Sincerely,
 Cociug Vitalie`,

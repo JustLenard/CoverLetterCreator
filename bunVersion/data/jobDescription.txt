@@ -1,49 +1,33 @@
+IVPN is a VPN service built for helping customers protect their privacy and resist online surveillance. We have been around since 2010 and are known as one of the most transparent, ethical and trustworthy providers.
+
+Why join IVPN?
+
+- You will be developing a product that we believe is crucial in the fight for online privacy together with a team that truly cares about their mission.
+- Fully remote setting.
+- We offer a competitive salary, generous vacation policy and the hardware of your choice to do your job.
 
 
-Full Stack Developer (React/TypeScript/AWS Lambda) x 4 - All Levels - Remote - New
+Job Summary
+
+We are seeking a full-stack developer to architect and build a robust web application focused on user privacy. This application must be designed for high scalability to accommodate a rapidly growing user base. The ideal candidate will be proficient in creating efficient, high-load systems and committed to delivering a secure, performant solution that respects user privacy on a large scale.
 
 
-£50,000 - £75,000 + Bonus + Excellent Benefits + Remote Working
+
+Core Responsibilities
+
+    Design, develop and maintain a scalable web application serving hundreds of thousands of customers
+    Continually refactoring, optimising, and improving the codebase for scale and security.
+    Collaborating with other members of the product development team (developers, UX designers, PM etc) to achieve project objectives.
+    Ensuring the overall stability, performance and security of the web application.
 
 
-A renowned organisation - recognised as the leader in its field - requires a number of Full Stack Engineers with strong experience of React, TypeScript and AWS Lambda as part of a new function!
+Job requirements
 
-
-Suitable candidates will be motivated, thoughtful, and want to be involved in the full stack from CI/CD, automated testing, tooling, development, and operations.
-
-
-Successful candidates will:
-
-
-    Be experienced Full Stack Engineers with experience across Front End, Back End and DevOps
-    Posses a DevOps mindset with experience of AWS or similar
-    Have experience of the following: AWS Lambda, TypeScript, React coupled with automated testing, Agile and CI/CD
-
-
-Additionally, you will:
-
-
-    Be a good communicator / collaborator
-    Ideally have coaching & mentoring skills
-    Possess a continuous improvement mindset
-    Be proactive and take initiative
-    Have a product mindset and be quality focused
-
-
-What's on Offer?
-
-
-    Competitive salary
-    Annual Bonus
-    Remote Working
-    25 days holiday plus option to purchase additional leave
-    Excellent pension scheme
-    Sharesave scheme
-    Health care plans
-    Gym memberships
-
-
-Please send your CV for an informal chat and full job description.
-
-
-Excellent opportunity to join an organisation that is willing to invest heavily in your development and future!
+    Bachelor's degree in Computer Science or a related field.
+    Proficient in front-end technologies such as HTML5, CSS3, JavaScript, and modern JS frameworks (React, Angular, Vue.js).
+    Experience with back-end development, including server, network, and hosting environments, ideally using Node.js / Python or Golang.
+    Knowledge of DNS protocols, privacy tools, and ad-blocking technology.
+    Fluent in SQL and able to create complex database schemas.
+    Understanding of security best practices to safeguard user data.
+    Experience with testing frameworks and continuous integration.
+    Ideally experience working in a remote, globally-distributed, agile team environment.
