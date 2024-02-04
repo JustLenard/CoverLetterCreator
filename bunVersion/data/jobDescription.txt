@@ -1,33 +1,93 @@
-IVPN is a VPN service built for helping customers protect their privacy and resist online surveillance. We have been around since 2010 and are known as one of the most transparent, ethical and trustworthy providers.
-
-Why join IVPN?
-
-- You will be developing a product that we believe is crucial in the fight for online privacy together with a team that truly cares about their mission.
-- Fully remote setting.
-- We offer a competitive salary, generous vacation policy and the hardware of your choice to do your job.
+Introduction
 
 
-Job Summary
-
-We are seeking a full-stack developer to architect and build a robust web application focused on user privacy. This application must be designed for high scalability to accommodate a rapidly growing user base. The ideal candidate will be proficient in creating efficient, high-load systems and committed to delivering a secure, performant solution that respects user privacy on a large scale.
+Change the world of Decentralized finance by joining DeFiner and introducing a technology-driven bank relying on smart contracts and blockchain instead of brick and mortar and bankers.
 
 
+DeFiner is a startup that is going to change the world of banking through investment in technology.  Be one of the first senior developers at DeFiner.
 
-Core Responsibilities
-
-    Design, develop and maintain a scalable web application serving hundreds of thousands of customers
-    Continually refactoring, optimising, and improving the codebase for scale and security.
-    Collaborating with other members of the product development team (developers, UX designers, PM etc) to achieve project objectives.
-    Ensuring the overall stability, performance and security of the web application.
+Location
 
 
-Job requirements
+While headquartered in Minneapolis, MN, you are not required to relocate to Minneapolis due to our decentralized team culture.   Team working hours fit well within any of the US time zones. 
 
-    Bachelor's degree in Computer Science or a related field.
-    Proficient in front-end technologies such as HTML5, CSS3, JavaScript, and modern JS frameworks (React, Angular, Vue.js).
-    Experience with back-end development, including server, network, and hosting environments, ideally using Node.js / Python or Golang.
-    Knowledge of DNS protocols, privacy tools, and ad-blocking technology.
-    Fluent in SQL and able to create complex database schemas.
-    Understanding of security best practices to safeguard user data.
-    Experience with testing frameworks and continuous integration.
-    Ideally experience working in a remote, globally-distributed, agile team environment.
+Start Date
+
+
+We would like you to start as soon as possible.  
+
+Why you should apply
+
+
+    Be a part of the cutting-edge technology team.
+
+
+    Gain access to an extensive network in the blockchain industry
+
+
+    Architect, Design middleware component of a three-tier system
+
+
+    Design and implement front-end features.
+
+
+    Help move the company to one of the top leading cryptocurrency companies.
+
+
+Qualifications 
+
+
+    A degree in computer science or relevant field or comparable experience
+
+
+    Must have good Analytical and communication skills.
+
+
+    Ability to solve complex problems and express solutions in layman's terms.
+
+
+    Firm grasp of object-oriented programming.
+
+
+    Experience with AWS services including, serverless functions, API Gateway etc.
+
+
+    Experience with blockchain and blockchain libraries and tools such as web3.js, and MetaMask.
+
+
+    Experience with designing databases, especially PostgreSQL, and providing access through APIs to the database
+
+
+    Hands-on experience in Reactjs, javascript, CSS, and typescript
+
+
+    Must have a good understanding of React concepts such as components, hooks, state management, and knowledge of React-testing-library.
+
+
+    Knowledge of webpack, babel, and similar tools 
+
+
+ 
+
+Responsibility 
+
+
+    Ensure excellent architecture and design for all features
+
+
+    Architect, Design, code and deploy APIs and database at the middle layer
+
+
+    Ensure the highest level of security measures in the system
+
+
+    Design and implement front-end features according to ReactJS best practices.
+
+
+    Design UI features with a focus on providing the best user experience possible.
+
+
+    Adhere to and ensure secure coding best practices are being followed.
+
+
+    Review other developers’ code and write and review design documents.
