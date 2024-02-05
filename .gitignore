@@ -99,6 +99,7 @@ web_modules/
 # dotenv environment variable files
 
 coverLetters
+pdfs
 nextJsVersion/node_modules
 bunVersion/.env
 /bunVersion/.env

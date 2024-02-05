@@ -1,40 +1,38 @@
-import { PDFDocument, StandardFonts, rgb } from 'pdf-lib'
+import { PDFDocument, StandardFonts } from 'pdf-lib'
 
-// Create a new PDFDocument
-const pdfDoc = await PDFDocument.create()
+const model = await Bun.file('./data/pdfTemplate.pdf').arrayBuffer()
+const pdfDoc = await PDFDocument.load(model)
 
 // Embed the Times Roman font
 const timesRomanFont = await pdfDoc.embedFont(StandardFonts.TimesRoman)
 
-// Add a blank page to the document
-const page = pdfDoc.addPage()
+const page = pdfDoc.getPage(0)
 
 // Get the width and height of the page
 const { width, height } = page.getSize()
-console.log('This is height', height)
 
-console.log('This is width', width)
+const arg = Bun.argv.at(-1)
+const coverLetterText = await Bun.file(`./coverLetters/coverLetter-${arg}.txt`).text()
 
-const coverLetterText = await Bun.file('./coverLetters/coverLetter-1.txt').text()
-
-const res = coverLetterText.replaceAll('\n', ' \n')
-
-res.split('').map((el) => {
-	if (el === '\n') {
-		console.log(true)
-	}
-})
+const parsedCoverLetter = coverLetterText.replaceAll('\n', ' \n')
 
 // Draw a string of text toward the top of the page
 const fontSize = 10
-page.drawText(res, {
-	x: 50,
-	y: height - 4 * fontSize,
+
+page.drawText('27 february', {
+	x: 500,
+	y: 710,
 	size: fontSize,
 	lineHeight: 12,
-	// font: timesRomanFont,
-	// color: rgb(0, 0.53, 0.71),
+	maxWidth: 500,
+	wordBreaks: [' '],
+})
 
+page.drawText(parsedCoverLetter, {
+	x: 50,
+	y: 680,
+	size: fontSize,
+	lineHeight: 12,
 	maxWidth: 500,
 	wordBreaks: [' '],
 })
@@ -42,9 +40,4 @@ page.drawText(res, {
 // Serialize the PDFDocument to bytes (a Uint8Array)
 const pdfBytes = await pdfDoc.save()
 
-Bun.write('this.pdf', pdfBytes)
-
-// For example, `pdfBytes` can be:
-//   • Written to a file in Node
-//   • Downloaded from the browser
-//   • Rendered in an <iframe>
+Bun.write(`./pdfs/coverLetter-${arg}.pdf`, pdfBytes)
