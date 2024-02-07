@@ -16,3 +16,25 @@ export const createCoverLetterName = async () => {
 	})
 	return `coverLetters/coverLetter-${maxNumber + 1}.txt`
 }
+
+export const formatDate = (date = new Date()) => {
+	const months = [
+		'January',
+		'February',
+		'March',
+		'April',
+		'May',
+		'June',
+		'July',
+		'August',
+		'September',
+		'October',
+		'November',
+		'December',
+	]
+	const day = date.getDate()
+	const monthIndex = date.getMonth()
+	const month = months[monthIndex]
+
+	return day + ' ' + month
+}

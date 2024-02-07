@@ -1,4 +1,5 @@
 import { PDFDocument, StandardFonts } from 'pdf-lib'
+import { formatDate } from './utils/utils'
 
 const model = await Bun.file('./data/pdfTemplate.pdf').arrayBuffer()
 const pdfDoc = await PDFDocument.load(model)
@@ -19,7 +20,7 @@ const parsedCoverLetter = coverLetterText.replaceAll('\n', ' \n')
 // Draw a string of text toward the top of the page
 const fontSize = 10
 
-page.drawText('27 february', {
+page.drawText(formatDate(), {
 	x: 500,
 	y: 710,
 	size: fontSize,
